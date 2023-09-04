@@ -2,25 +2,39 @@
 
 ## About Laravel BEDeveloper Task with steps
 
-BEDeveloper task covered CRUD operation of REST API with ordring system on based of points increment and decrement. This task done in laravel PHP framework. In this task, there are covered mainly pages in Controller, Model, Healer, Test feature. To install and proceed with this task need to follow below steps:
+BEDeveloper task covered CRUD operation of REST API with ordring system on based of points increment and decrement. This task done in laravel PHP framework. In this task, there are covered mainly pages in Controller, Model, Healer, Test feature.
+
+To install and proceed with this task need to follow below steps:
+
 Step 1 : First take git clone at your local folder by using code clone URL.
+
 Step 2 : after sucessfully done cloning folow below commands.
+
             - cd BEDeveloper-Urvi
             - composer install
     Note: Composer install will add all required packages as per package.json
+    
 Step 3 : Add .env file as per given in email or you can copy from .env.example and add your new database name in .env's database config.
+
 Step 4 : After adding database, run migration with below command 
+
             - php artisan migrate
                 OR
             - For specific file: php artisan migration --path=database/migrations/2023_09_01_182454_create_lists_table.php
+            
 Step 5 : Now, start to run your project on teminal with below command which start your port 8000 intially if you not define any port.
+
             - php artisan serve
-            - For specific port: php artisan server --port 8081    
+            - For specific port: php artisan server --port 8081 
+            
 Now, finally, you can run all rest api's path as per given below:
+
     1) POST method Request URL for storing list User: http://your terminal ip:port/api/v1/lists
     2) GET method Requset for display each list user: http://<your terminal ip:port>/api/v1/lists/{id} 
     3) GET method Requset for display all list users: http://<your terminal ip:port>/api/v1/lists
-    4) PUT/PETCH method Requset for display each list user. Here body parameter point=1 means addition of points and parameter point=2 means substraction of points of each user : http://<your terminal ip:port>/api/v1/lists/{id}?points=1 OR http://<your terminal ip:port>/api/v1/lists/{id}?points=2
+    4) PUT/PETCH method Requset for display each list user. Here body parameter point=1 means addition of points 
+    and parameter point=2 means substraction of points of each user : 
+    http://<your terminal ip:port>/api/v1/lists/{id}?points=1 OR http://<your terminal ip:port>/api/v1/lists/{id}?points=2
     5) DELETE method request for soft delete each user: http://<your terminal ip:port>/api/v1/lists/{id}
 Run above URLs with mentioned method request.
 
