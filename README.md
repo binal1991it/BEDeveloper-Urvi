@@ -39,6 +39,7 @@ Now, finally, you can run all rest api's path as per given below:
 Run above URLs with mentioned method request.
 
 Step 6: For run test file use below command for run specific test file:
+
         - php artisan test --filter=ListTest
         - OR you can run only => php artisan test
 
