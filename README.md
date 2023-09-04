@@ -20,11 +20,7 @@ Step 4 : After adding database, run migration with below command
 
             - php artisan migrate
                 OR
-<<<<<<< HEAD
             - For specific file: php artisan migrate --path=database/migrations/2023_09_01_182454_create_lists_table.php
-=======
-            - For specific file: php artisan migration --path=database/migrations/2023_09_01_182454_create_lists_table.php
->>>>>>> 14f913528bcd9f3dbd70f75928f796cd0ad477dd
             
 Step 5 : Now, start to run your project on teminal with below command which start your port 8000 intially if you not define any port.
 
