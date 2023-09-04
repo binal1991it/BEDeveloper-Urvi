@@ -25,7 +25,7 @@ Step 4 : After adding database, run migration with below command
 Step 5 : Now, start to run your project on teminal with below command which start your port 8000 intially if you not define any port.
 
             - php artisan serve
-            - For specific port: php artisan server --port 8081 
+            - For specific port: php artisan serve --port=8081 
             
 Now, finally, you can run all rest api's path as per given below:
 
