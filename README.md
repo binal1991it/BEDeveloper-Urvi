@@ -58,7 +58,7 @@ Step 6: For run test file use below command for run specific test file:
 
 3) GET : http://127.0.0.1:8000/api/v1/lists : Uses For get all List users details 
 
-4) PUT/PETCH : http://127.0.0.1:8000/api/v1/lists/{id}?points=1 / http://127.0.0.1:8000/api/v1/lists/{id}?points=2 : Uses For update points of passed id list users with URL parameter points. Points 1 define addition and Points 2 define subtraction. After point update re-order function will works and highest points list user gets first priority and other gets respective order as per points.
+4) PUT/PETCH : http://127.0.0.1:8000/api/v1/lists/{id}?points=1 OR http://127.0.0.1:8000/api/v1/lists/{id}?points=2 : Uses For update points of passed id list users with URL parameter points. Points 1 define addition and Points 2 define subtraction. After point update re-order function will works and highest points list user gets first priority and other gets respective order as per points.
 
 5) DELETE : http://127.0.0.1:8000/api/v1/lists/{id} : For delete uses soft delete. With id list user will be deleted.
 
