@@ -44,13 +44,13 @@ Step 6: For run test file use below command for run specific test file:
         - OR you can run only => php artisan test
 
 ## Explanation with end points with local URL:
-
+	
 1) POST : http://127.0.0.1:8000/api/v1/lists : Uses For store details into list table of database with below body parameters:
      
     {
-        "name":"Urvi Patel2",
+        "name":"Urvi Patel",
         "birth_date":"01-09-1991",
-        "address":"5 froom cresent"
+        "address":"SK, Canada"
     }
     - Other parameter points, age, order will added from controller logic.
 
@@ -60,7 +60,7 @@ Step 6: For run test file use below command for run specific test file:
 
 4) PUT/PETCH : http://127.0.0.1:8000/api/v1/lists/{id}?points=1 / http://127.0.0.1:8000/api/v1/lists/{id}?points=2 : Uses For update points of passed id list users with URL parameter points. Points 1 define addition and Points 2 define subtraction. After point update re-order function will works and highest points list user gets first priority and other gets respective order as per points.
 
-5) DELETE : http://127.0.0.1:8000/api/v1/lists/{id} : For delete uses soft delete. With id list user will deleted.
+5) DELETE : http://127.0.0.1:8000/api/v1/lists/{id} : For delete uses soft delete. With id list user will be deleted.
 
 With above steps project will successfully. Below are the things about Laravel default read details. 
 ## About Laravel
