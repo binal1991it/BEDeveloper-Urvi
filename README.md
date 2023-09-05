@@ -14,7 +14,7 @@ Step 2 : after sucessfully done cloning folow below commands.
             - composer install
     Note: Composer install will add all required packages as per package.json
     
-Step 3 : Add .env file as per given in email or you can copy from .env.example and add your new database name in .env's database config.
+Step 3 : Add .env file copy from .env.example and add your new database name in .env's database config.
 
 Step 4 : After adding database, run migration with below command 
 
