@@ -62,7 +62,7 @@ Step 6: For run test file use below command for run specific test file:
 
 5) DELETE : http://127.0.0.1:8000/api/v1/lists/{id} : For delete uses soft delete. With id list user will be deleted.
 
-With above steps project will successfully. Below are the things about Laravel default read details. 
+With above steps project will successfully run. Below are the things about Laravel default read details. 
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
