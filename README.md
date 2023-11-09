@@ -23,6 +23,7 @@ Step 5 : Now, start to run your project on teminal with below command which star
             - For specific port: php artisan server --port 8081  
 
 Now, finally, you can run all rest api's path as per given below:
+
     1) POST method Request URL for storing list User: http://your terminal ip:port/api/v1/lists
     2) GET method Requset for display each list user: http://<your terminal ip:port>/api/v1/lists/{id} 
     3) GET method Requset for display all list users: http://<your terminal ip:port>/api/v1/lists
