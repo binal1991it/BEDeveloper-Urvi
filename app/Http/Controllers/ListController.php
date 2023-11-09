@@ -15,7 +15,7 @@ class ListController extends Controller
      */
     public function index()
     {
-        $lists = Lists::orderBy('order', 'desc')->get();
+        $lists = Lists::orderBy('points', 'desc')->get();
         return response()->json(['success' => true, 'message'=> "List users listed successfully.", 'lists' => $lists]);
     }
 
@@ -41,13 +41,10 @@ class ListController extends Controller
          }
         $birth_date = date('Y-m-d', strtotime($request->birth_date));
         $age = Carbon::parse($birth_date)->age;
-        $ListPlus = Lists::orderBy('order', 'desc')->first();
-        $order = ($ListPlus) ? $ListPlus->order+1 : 1;
         $list = Lists::create([
             'name' => $request->name,
             'birth_date' => $birth_date,
             'age' => $age,
-            'order'=> $order,
             'address' => $request->address
         ]);
         return response()->json(['success' => true, 'message'=> "List user created successfully.", 'list' => $list]);
@@ -92,7 +89,6 @@ class ListController extends Controller
                 $list->points--;
             }
             $list->save();
-            $Lists = GenerateOrder(); // Call function for update order...
             $message = "List user points updated successfully.";
             $success = true;
         }
@@ -110,9 +106,7 @@ class ListController extends Controller
         $success = false;
         $list = Lists::find($id);
         if($list){
-            $list->deleted_at = now();
-            $list->save();
-            GenerateOrder(); // Call function for update order...
+            $list->delete();
             $success = true;
             $message = "List user deleted successfully.";
         }

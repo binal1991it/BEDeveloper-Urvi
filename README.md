@@ -1,11 +1,40 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About Laravel BEDeveloper Task with steps
+
+BEDeveloper task covered CRUD operation of REST API with ordring system on based of points increment and decrement. This task done in laravel PHP framework. In this task, there are covered mainly pages in Controller, Model, Healer, Test feature. To install and proceed with this task need to follow below steps:
+
+Step 1 : First take git clone at your local folder by using code clone URL.
+
+Step 2 : after sucessfully done cloning folow below commands.
+            - cd BEDeveloper-Urvi
+            - composer install
+    Note: Composer install will add all required packages as per package.json
+
+Step 3 : Add .env file as per given in email or you can copy from .env.example and add your new database name in .env's database config.
+
+Step 4 : After adding database, run migration with below command 
+            - php artisan migrate
+                OR
+            - For specific file: php artisan migration --path=database/migrations/2023_09_01_182454_create_lists_table.php
+
+Step 5 : Now, start to run your project on teminal with below command which start your port 8000 intially if you not define any port.
+            - php artisan serve
+            - For specific port: php artisan server --port 8081  
+
+Now, finally, you can run all rest api's path as per given below:
+    1) POST method Request URL for storing list User: http://your terminal ip:port/api/v1/lists
+    2) GET method Requset for display each list user: http://<your terminal ip:port>/api/v1/lists/{id} 
+    3) GET method Requset for display all list users: http://<your terminal ip:port>/api/v1/lists
+    4) PUT/PETCH method Requset for display each list user. Here body parameter point=1 means addition of points and parameter point=2 means substraction of points of each user : http://<your terminal ip:port>/api/v1/lists/{id}?points=1 OR http://<your terminal ip:port>/api/v1/lists/{id}?points=2
+    5) DELETE method request for soft delete each user: http://<your terminal ip:port>/api/v1/lists/{id}
+Run above URLs with mentioned method request.
+
+Step 6: For run test file use below command for run specific test file:
+        - php artisan test --filter=ListTest
+        - OR you can run only => php artisan test
+
+With above steps project will successfully. Below are the things about Laravel default read details. 
 
 ## About Laravel
 
@@ -28,26 +57,6 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
 ## Contributing
 

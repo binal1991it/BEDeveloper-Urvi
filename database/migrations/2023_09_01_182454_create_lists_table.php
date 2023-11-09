@@ -19,7 +19,6 @@ return new class extends Migration
             $table->date('birth_date');
             $table->smallInteger('age');
             $table->Integer('points')->default(0);
-            $table->Integer('order')->default(0);
             $table->text('address');
             $table->timestamps();
             $table->softDeletes();
